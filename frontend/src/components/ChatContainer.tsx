@@ -28,7 +28,7 @@ const ChatContainer = () => {
 
   useEffect(() => {
     if (messageEndRef.current && messages.length > 0)
-      messageEndRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      messageEndRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }, [messages]);
 
   if (isMessagesLoading)
